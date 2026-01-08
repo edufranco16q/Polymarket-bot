@@ -2,11 +2,13 @@ import requests
 import time
 from datetime import datetime
 import json
+import os
 
 # ========== CONFIGURACIÓN ==========
 
-TELEGRAM_TOKEN = “8212339584:AAEKE_wkah0zcurPNjXGCHwJQ0AMvyY7eGs”
-CHAT_ID = “2052717453”
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
+
 
 # Parámetros de alertas
 
